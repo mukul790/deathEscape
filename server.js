@@ -178,6 +178,6 @@ function endGame() {
 
 app.use(express.static('public'));
 
-http.listen(8000, () => {
+http.listen(process.env.PORT || 8000, () => {
   console.log('Server started on port 8000');
 });
